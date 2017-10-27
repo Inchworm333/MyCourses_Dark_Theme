@@ -1,0 +1,31 @@
+@-moz-document domain("mycourses.rit.edu") {
+/* Main Page */
+.d2l-navigation-s-header,
+.d2l-navigation-s-main.d2l-navigation-main-tb {
+    background-color: #212121;
+    border-bottom: 1px solid #424242;
+}
+.x-scope.d2l-icon-0 circle[fill="#e57231"] {
+    stroke-width: 0px;
+}
+.d2l-navigation-s-button-highlight.d2l-dropdown-opener {
+    background-color: #212121;
+    color: #424242;
+}
+.x-scope.d2l-icon-0 {
+    color: #424242;
+}
+.d2l-dropdown-content-width.style-scope.d2l-dropdown-content {
+    background-color: #212121;
+}
+body {
+    background-color: #212121 !important;
+}
+.d2l-navigation-s-shadow-gradient {
+    display: none;
+}
+div[aria-labelledby*=d2l_1_0_],
+div[aria-labelledby*=d2l_1_7_] {
+    display: none;
+}
+}
