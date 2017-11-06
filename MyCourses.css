@@ -15,12 +15,24 @@
 .d2l-navigation-s-button-highlight.d2l-navigation-s-home-icon {
     background-color: #212121;
 }
-.x-sc
 .x-scope.d2l-icon-0 {
     color: #424242;
 }
 .d2l-dropdown-content-width.style-scope.d2l-dropdown-content {
     background-color: #212121;
+}
+.d2l-collapsepane-header {
+    background-color: #424242 !important;
+    background-image: none !important;
+    color: #757575;
+    border: 1px solid black !important;
+}
+[icon="d2l-tier1:arrow-expand"],
+[icon="d2l-tier1:arrow-collapse"] {
+    color: #757575 !important;
+}
+div[class*="d2l_1_100"].d2l-textblock-strong {
+    background-color: #BDBDBD;
 }
 body {
     background-color: #212121 !important;
@@ -28,6 +40,7 @@ body {
 .d2l-navigation-s-shadow-gradient {
     display: none;
 }
+/* Delete the user links box and the 'find my courses' box*/
 div[aria-labelledby*=d2l_1_0_],
 div[aria-labelledby*=d2l_1_7_] {
     display: none;
