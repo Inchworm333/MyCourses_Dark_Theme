@@ -2,71 +2,79 @@
 /* Main Page */
 .d2l-navigation-s-header,
 .d2l-navigation-s-main.d2l-navigation-main-tb {
-    background-color: #212121;
-    border-bottom: 1px solid #424242;
+	background-color: #212121;
+	border-bottom: 1px solid #424242;
 }
 
 /* Notification Circle */
 .x-scope.d2l-icon-0 circle[fill="#e57231"] {
-    stroke-width: 0px;
+	stroke-width: 0px;
 }
 
 /* Top Menu Button Colors */
 .d2l-navigation-s-button-highlight.d2l-dropdown-opener {
-    background-color: #212121;
-    color: #424242;
+	background-color: #212121;
+	color: #424242;
 }
 
 /* Go Home Icon (from non home pages) */
 .d2l-navigation-s-button-highlight.d2l-navigation-s-home-icon {
-    background-color: #212121;
+	background-color: #212121;
 }
 .x-scope.d2l-icon-0 {
-    color: #424242;
+	color: #424242;
 }
 .d2l-dropdown-content-width.style-scope.d2l-dropdown-content {
-    background-color: #212121;
+	background-color: #212121;
 }
 
 /* Sidebar Calender Dropdown */
 .d2l-collapsepane-header {
-    background-color: #424242 !important;
-    background-image: none !important;
-    color: #757575;
-    border: 1px solid black !important;
+	background-color: #424242 !important;
+	background-image: none !important;
+	color: #757575;
+	border: 1px solid black !important;
 }
 [icon="d2l-tier1:arrow-expand"],
 [icon="d2l-tier1:arrow-collapse"] {
-    color: #757575 !important;
+	color: #757575 !important;
 }
-.d2l-datalist-simpleitem.vui-active {
-    background-color: #424242 !important;
+.d2l-collapsepane-content {
+	background-color: #424242 !important;
+	border-right: 1px solid black !important;
+	border-left: 1px solid black !important;
+	border-bottom: 1px solid black !important;
 }
-
-div[class*="d2l_1_100"].d2l-textblock-strong {
-    background-color: #BDBDBD;
+.d2l-datalist-simpleitem {
+	background-color: #424242 !important;
+}
+.d2l-textblock {
+	color: #EEEEEE;
 }
 
 body {
-    background-color: #212121 !important;
+	background-color: #212121 !important;
 }
 
 /* Text Color */
-.d2l-typography, .d2l-heading {
-    color: #EEEEEE;
+.d2l-typography,
+.d2l-heading {
+	color: #EEEEEE;
 }
-.d2l-textblock-secondary, .course-code-text, .d2l-navigation-s-link {
-    color: #9E9E9E !important;
+.d2l-textblock-secondary,
+.course-code-text,
+.d2l-navigation-s-link {
+	color: #9E9E9E !important;
 }
 
 /* Delete Abnoxious Gradient Shadow */
 .d2l-navigation-s-shadow-gradient {
-    display: none;
+	display: none;
 }
 
 /* Delete the user links box and the 'find my courses' box*/
 div[aria-labelledby*=d2l_1_0_],
 div[aria-labelledby*=d2l_1_7_] {
-    display: none;
+	display: none;
 }
 }
