@@ -1,9 +1,14 @@
 @-moz-document domain("mycourses.rit.edu") {
-/* Main Page */
+/* Generic Page */
 .d2l-navigation-s-header,
 .d2l-navigation-s-main.d2l-navigation-main-tb {
 	background-color: #212121;
 	border-bottom: 1px solid #424242;
+}
+
+/* Site Body */
+body {
+	background-color: #212121 !important;
 }
 
 /* Notification Circle */
@@ -28,34 +33,6 @@
 	background-color: #212121;
 }
 
-/* Sidebar Calender Dropdown */
-.d2l-collapsepane-header {
-	background-color: #424242 !important;
-	background-image: none !important;
-	color: #757575;
-	border: 1px solid black !important;
-}
-[icon="d2l-tier1:arrow-expand"],
-[icon="d2l-tier1:arrow-collapse"] {
-	color: #757575 !important;
-}
-.d2l-collapsepane-content {
-	background-color: #424242 !important;
-	border-right: 1px solid black !important;
-	border-left: 1px solid black !important;
-	border-bottom: 1px solid black !important;
-}
-.d2l-datalist-simpleitem {
-	background-color: #424242 !important;
-}
-.d2l-textblock {
-	color: #EEEEEE;
-}
-
-body {
-	background-color: #212121 !important;
-}
-
 /* Text Color */
 .d2l-typography,
 .d2l-heading {
@@ -72,9 +49,106 @@ body {
 	display: none;
 }
 
+/* Sidebar Calender Dropdown */
+.d2l-widget {
+	border-color: #616161 !important;
+}
+.d2l-collapsepane-header {
+	background-color: #424242 !important;
+	background-image: none !important;
+	color: #757575;
+	border: 1px solid black !important;
+}
+[icon="d2l-tier1:arrow-expand"],
+[icon="d2l-tier1:arrow-collapse"] {
+	color: #757575 !important;
+}
+.d2l-collapsepane-content {
+	background-color: #424242 !important;
+	border-right: 1px solid black !important;
+	border-left: 1px solid black !important;
+	border-bottom: 1px solid black !important;
+}
+.d2l-textblock {
+	color: #EEEEEE;
+}
+
+/*color of horozontal ruler*/
+hr {
+	border-color: #424242 !important;
+	background-color: #424242 !important;
+	color: #424242 !important;
+}
+}
+
+@-moz-document url("https://mycourses.rit.edu/d2l/home") {
+/* HOME */
+
 /* Delete the user links box and the 'find my courses' box*/
 div[aria-labelledby*=d2l_1_0_],
 div[aria-labelledby*=d2l_1_7_] {
 	display: none;
+}
+.d2l-course-image-tile {
+	border-width: 1px;
+	border-color: black !important;
+}
+.update-text-box {
+	margin-right: 10px !important;
+	margin-top: 10px !important;
+	border-color: #e87511 !important;
+}
+.flex {
+	background-color: #424242;
+	overflow: hidden;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.course-text {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	color: #EEEEEE;
+}
+.course-code-text,
+.semester-text,
+.d2l-icon-2 {
+	color: #BDBDBD !important;
+}
+}
+
+@-moz-document url("https://mycourses.rit.edu/d2l/loginh/") {
+/*fix col width so non rit login fits*/
+.col-md-1 {
+	width: 0;
+}
+
+/*rounded corners for most things */
+#login-container,
+.col-md-5.splash-inset,
+.support {
+	border-radius: 15px;
+}
+
+/* Change color for support boxes and images inside */
+.support {
+	background-color: #424242 !important;
+	color: white;
+}
+.col-md-3 .support img {
+	filter: contrast(5);
+}
+
+/*Get rid of 'review info for browser' and fix spacing*/
+.col-md-8 .login-list {
+	display: none;
+}
+.col-md-8 .row {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+/*Delete scrollbar*/
+html {
+	overflow: hidden;
 }
 }
