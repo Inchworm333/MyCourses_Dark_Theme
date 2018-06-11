@@ -5,13 +5,28 @@
 	background-color: #212121;
 	border-bottom: 1px solid #424242;
 }
+.d2l-navigation-s-band-color {
+	background-color: #E65100 !important;
+}
 
 /* Site Body */
 body {
 	background-color: #212121 !important;
 }
 
-/* Main Logo Brightness*/
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+	background: #212121;
+	box-shadow: inset 0 0 3px black;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #424242;
+	border-radius: 10px;
+}
+
+/* Main Logo Brightness */
 img[alt="My Home"] {
 	filter: brightness(2);
 }
@@ -42,17 +57,64 @@ d2l-icon[icon="navigation-42:profile"] {
 /* Text Color */
 .d2l-typography,
 .d2l-heading {
-	color: #EEEEEE;
+	color: #EEEEEE !important;
 }
 .d2l-textblock-secondary,
 .course-code-text,
-.d2l-navigation-s-link {
-	color: #9E9E9E !important;
+.d2l-navigation-s-link,
+p,
+.d2l-htmlblock {
+	color: #E0E0E0 !important;
+}
+.d2l-textblock {
+	color: #BDBDBD !important;
+}
+[style="font-size: 12pt; color: #633d28;"] {
+	color: #795548 !important;
 }
 
-/* Delete Abnoxious Gradient Shadow */
-.d2l-navigation-s-shadow-gradient {
-	display: none;
+/* Links */
+.d2l-link-elem,
+.d2l-link,
+.d2l-htmlblock[*=href] {
+	color: #448AFF !important;
+}
+.d2l-link-elem:visited,
+.d2l-link:visited {
+	color: #7C4DFF !important;
+}
+
+/* Hilight Background Color */
+.vui-active {
+	background-color: #616161 !important;
+}
+
+/* Loading Icon Spinner */
+.d2l-loading-spinner circle[stroke-width="0.5"] {
+	/*Border Color*/
+	stroke: black !important;
+	background-color: black;
+}
+.d2l-loading-spinner circle[fill="#FFF"] {
+	fill: #616161;
+}
+.d2l-loading-spinner-0 .d2l-loading-spinner-wrapper svg[class*="slice"] g path:first-child + path,
+.d2l-loading-spinner-1 .d2l-loading-spinner-wrapper svg[class*="slice"] g path:first-child + path,
+.d2l-loading-spinner-2 .d2l-loading-spinner-wrapper svg[class*="slice"] g path:first-child + path {
+	fill: #9E9E9E !important;
+	border: none;
+	stroke: #9E9E9E;
+	stroke-width: 0.5;
+}
+.d2l-loading-spinner-0 .d2l-loading-spinner-wrapper svg[class*="slice"] g path:first-child,
+.d2l-loading-spinner-1 .d2l-loading-spinner-wrapper svg[class*="slice"] g path:first-child,
+.d2l-loading-spinner-2 .d2l-loading-spinner-wrapper svg[class*="slice"] g path:first-child {
+	fill: #616161;
+}
+.d2l-loading-spinner-0 .d2l-loading-spinner-bg.d2l-loading-spinner,
+.d2l-loading-spinner-1 .d2l-loading-spinner-bg.d2l-loading-spinner,
+.d2l-loading-spinner-2 .d2l-loading-spinner-bg.d2l-loading-spinner {
+	stroke: #D84315;
 }
 
 /* Sidebar Calender Dropdown */
@@ -79,11 +141,22 @@ d2l-icon[icon="navigation-42:profile"] {
 	color: #EEEEEE;
 }
 
-/*color of horozontal ruler*/
+/* Various Context Menus */
+.d2l-contextmenu {
+	background-color: #424242;
+	border-color: black !important;
+}
+
+/* color of horozontal ruler */
 hr {
 	border-color: #424242 !important;
 	background-color: #424242 !important;
 	color: #424242 !important;
+}
+
+/* Delete Abnoxious Gradient Shadow */
+.d2l-navigation-s-shadow-gradient {
+	display: none;
 }
 }
 
@@ -96,50 +169,12 @@ div[aria-labelledby*=d2l_1_7_] {
 	display: none;
 }
 
-/*Loading Icon Spinner*/
-.d2l-loading-spinner circle[stroke-width="0.5"] {
-	/*Border Color*/
-	stroke: black !important;
-	background-color: black;
+/* For the All-Courses popup */
+#all-courses,
+#all-courses .scrollable {
+	background: #212121;
+	border-top-color: black;
 }
-.d2l-loading-spinner circle[fill="#FFF"] {
-	fill: #616161;
-}
-.d2l-loading-spinner-1 .d2l-loading-spinner-wrapper svg[class*="slice"] g path:first-child + path {
-	fill: #9E9E9E !important;
-	border: none;
-	stroke: #9E9E9E;
-	stroke-width: 0.5;
-}
-.d2l-loading-spinner-1 .d2l-loading-spinner-wrapper svg[class*="slice"] g path:first-child {
-	fill: #616161;
-}
-.d2l-loading-spinner-1 .d2l-loading-spinner-bg.d2l-loading-spinner {
-	stroke: #D84315;
-}
-
-/*Fix Loading Spinner */
-/*
-.d2l-loading-spinner-1 .d2l-loading-spinner-slice1.d2l-loading-spinner{
-	animation-name: tall;
-	transform: rotate(0deg) !important;
-}
-.d2l-loading-spinner-1 .d2l-loading-spinner-slice2.d2l-loading-spinner{
-	animation-name:fixspin2 !important;
-	transform: rotate(90deg);
-}
-.d2l-loading-spinner-1 .d2l-loading-spinner-slice3.d2l-loading-spinner{
-	animation-name:slicespin2-d2l-loading-spinner-1 !important;
-	transform: rotate(124deg) !important;
-}
-.d2l-loading-spinner-1 .d2l-loading-spinner-slice4.d2l-loading-spinner{
-	animation-name:slicespin3-d2l-loading-spinner-1 !important;
-	transform: rotate(198deg) !important;
-}
-.d2l-loading-spinner-1 .d2l-loading-spinner-slice5.d2l-loading-spinner{
-	animation-name:slicespin4-d2l-loading-spinner-1 !important;
-	transform: rotate(270deg) !important;
-}*/
 
 /* Alerts */
 .d2l-alert-0 {
