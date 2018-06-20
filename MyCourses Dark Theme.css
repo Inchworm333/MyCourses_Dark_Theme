@@ -1,4 +1,10 @@
 @-moz-document domain("mycourses.rit.edu") {
+	
+/* MyCourses Dark Theme
+   author: Inchworm333
+   description: A dark theme and general fixes to the rit MyCourses
+*/
+
 /* Generic Page */
 .d2l-navigation-s-header,
 .d2l-navigation-s-main.d2l-navigation-main-tb {
