@@ -96,7 +96,8 @@ p,
 }
 
 /* Links */
- :link {
+.d2l-link-elem:link,
+.d2l-link:link{
 	color: #448AFF !important;
 }
 
@@ -327,8 +328,4 @@ d2l-course-image-tile:hover .d2l-image-tile-menu-adjacent-container.d2l-image-ti
 html {
 	overflow: hidden;
 }
-}
-
-@-moz-document domain("mycourses.rit.edu") {
-
 }
