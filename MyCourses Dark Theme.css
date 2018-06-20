@@ -15,12 +15,10 @@
 	background-color: #E65100 !important;
 }
 
-
 /* Site Body */
 body {
 	background-color: #212121 !important;
 }
-
 
 /* Scrollbar */
  ::-webkit-scrollbar {
@@ -35,24 +33,20 @@ body {
 	border-radius: 10px;
 }
 
-
 /* Main Logo Brightness */
 img[alt="My Home"] {
 	filter: brightness(2);
 }
-
 
 /* Top Menu Name Colors */
 .d2l-navigation-s-button-highlight.d2l-dropdown-opener {
 	color: #9E9E9E;
 }
 
-
 /* Notification Circle */
 .x-scope.d2l-icon-0 circle[fill="#e57231"] {
 	stroke-width: 0px;
 }
-
 
 /* Top Icons */
 d2l-icon[icon="d2l-tier2:divider-big"] {
@@ -67,7 +61,6 @@ d2l-icon[icon="d2l-tier3:notification-bell"],
 d2l-icon[icon="navigation-42:profile"] {
 	color: #9E9E9E;
 }
-
 
 /* Text Color */
 .d2l-typography,
@@ -91,11 +84,8 @@ p,
 	color: #795548 !important;
 }
 
-
 /* Links */
-.d2l-link-elem,
-.d2l-link,
-.d2l-htmlblock[href=*] {
+ :link {
 	color: #448AFF !important;
 }
 
@@ -104,12 +94,10 @@ p,
 	color: #7C4DFF !important;
 }
 
-
 /* Hilight Background Color */
 .vui-active {
 	background-color: #616161 !important;
 }
-
 
 /* Loading Icon Spinner */
 .d2l-loading-spinner circle[stroke-width="0.5"] {
@@ -143,7 +131,6 @@ p,
 	stroke: #D84315;
 }
 
-
 /* Sidebar Calender Dropdown */
 .d2l-widget {
 	border-color: #616161 !important;
@@ -172,13 +159,11 @@ p,
 	color: #EEEEEE;
 }
 
-
 /* Various Context Menus */
 .d2l-contextmenu {
 	background-color: #424242;
 	border-color: black !important;
 }
-
 
 /* color of horozontal ruler */
 hr {
@@ -186,7 +171,6 @@ hr {
 	background-color: #424242 !important;
 	color: #424242 !important;
 }
-
 
 /* Delete Abnoxious Gradient Shadow */
 .d2l-navigation-s-shadow-gradient {
@@ -332,4 +316,8 @@ d2l-course-image-tile:hover .d2l-image-tile-menu-adjacent-container.d2l-image-ti
 html {
 	overflow: hidden;
 }
+}
+
+@-moz-document domain("mycourses.rit.edu") {
+
 }
