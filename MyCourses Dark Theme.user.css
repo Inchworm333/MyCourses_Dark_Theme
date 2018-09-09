@@ -309,6 +309,10 @@ d2l-course-image-tile:hover .d2l-image-tile-menu-adjacent-container.d2l-image-ti
 	background-color: #424242 !important;
 	color: white;
 }
+	
+.support:hover {
+	background-color: #E87420 !important;
+}
 
 .col-md-3 .support img {
 	filter: contrast(5);
